@@ -8,8 +8,14 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "_moduleAliases": {
+    "@entities-services": "dist/modules/database/services",
+    "@entities": "dist/entities",
+    "@modules": "dist/modules"
+  },
   "dependencies": {
     "next": "12.1.5",
+    "next-auth": "^4.3.3",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-icons": "^4.3.1",
@@ -17,10 +23,12 @@
     "stripe": "^8.218.0"
   },
   "devDependencies": {
+    "@types/next-auth": "^3.15.0",
     "@types/node": "^17.0.24",
     "@types/react": "^18.0.5",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5",
+    "module-alias": "^2.2.2",
     "typescript": "^4.6.3"
   }
 }
