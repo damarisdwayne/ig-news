@@ -2,8 +2,8 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import { query as q } from 'faunadb'
 import { getSession } from 'next-auth/react'
-import { fauna } from '../../Services/fauna'
-import { stripe } from '../../Services/stripe'
+import { fauna } from '../../services/fauna'
+import { stripe } from '../../services/stripe'
 
 type User = {
     ref: {
